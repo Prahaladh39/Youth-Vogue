@@ -1,2 +1,8 @@
-You can direclty view the website here:
-Netlify: https://friendly-taiyaki-788c19.netlify.app/
+A simple web page demonstrating welcome messages.
+
+## Architecture
+
+```mermaid
+graph TD
+    WebPage --> UserInterface
+```
