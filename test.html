@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mermaid Test App</title>
+  </head>
+  <body>
+    <h1>Welcome</h1>
+    <button onclick="loadData()">Load Data</button>
+
+    <script>
+      function loadData() {
+        fetch("/api/data")
+          .then((res) => res.json())
+          .then((data) => {
+            console.log(data);
+          });
+      }
+    </script>
+  </body>
+</html>
