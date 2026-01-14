@@ -1,2 +1,4 @@
-You can direclty view the website here:
-Netlify: https://friendly-taiyaki-788c19.netlify.app/
+### Initial Content
+
+The application now displays an additional welcome message:
+- "Welcome back2"
