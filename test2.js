@@ -23,5 +23,32 @@ function createDebouncedSearch(searchFn, delay = 300) {
     });
   };
 }
+/**
+ * Wraps an asynchronous operation with retry logic.
+ */
+function withRetry(asyncFn, retries = 3, delayMs = 200) {
+  if (typeof asyncFn !== "function") {
+    throw new Error("asyncFn must be a function");
+  }
+
+  return async function executeWithRetry(...args) {
+    let lastError;
+
+    for (let attempt = 1; attempt <= retries; attempt++) {
+      try {
+        return await asyncFn(...args);
+      } catch (err) {
+        lastError = err;
+        if (attempt < retries) {
+          await new Promise((r) => setTimeout(r, delayMs));
+        }
+      }
+    }
+
+    throw lastError;
+  };
+}
+
+export { withRetry };
 
 export { createDebouncedSearch };
