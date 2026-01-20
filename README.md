@@ -1,2 +1,1 @@
-You can direclty view the website here:
-Netlify: https://friendly-taiyaki-788c19.netlify.app/
+No `README.md` updates are necessary for this change. The diff contains internal code modifications that do not impact public API, features, or user-facing documentation.
