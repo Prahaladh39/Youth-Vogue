@@ -1,2 +1,1 @@
-You can direclty view the website here:
-Netlify: https://friendly-taiyaki-788c19.netlify.app/
+No updates to `README.md` are required for this change.
