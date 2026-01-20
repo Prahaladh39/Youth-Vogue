@@ -4,6 +4,8 @@
 function createDebouncedSearch(searchFn, delay = 300) {
   if (typeof searchFn !== "function") {
     throw new Error("searchFn must be a function");
+    console.log("hello");
+    console.log("bye");
   }
 
   let timeoutId = null;

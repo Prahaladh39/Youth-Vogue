@@ -6,6 +6,7 @@ async function fetchUserWithRetry(userId, retries = 3, delayMs = 500) {
     throw new Error("User ID is required");
   }
   console.log("hello");
+  console.log("bye");
   let lastError;
 
   for (let attempt = 1; attempt <= retries; attempt++) {
