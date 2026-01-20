@@ -1,2 +1,2 @@
-You can direclty view the website here:
-Netlify: https://friendly-taiyaki-788c19.netlify.app/
+- `fetchProductWithCache`: Fetches product details with in-memory caching to avoid duplicate network requests.
+- `withRetry`: Wraps an asynchronous operation with retry logic.
